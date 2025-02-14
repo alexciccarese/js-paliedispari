@@ -3,6 +3,8 @@ L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. Generiamo un n
 
 // scelta utente 
 const userChoise = prompt('Scegli pari o dispari')
+console.log(userChoise);
+
 
 const userNumber = Number(prompt('Scegli un numero da 1 a 5'))
 console.log(`${userNumber} è il tuo numero`);
