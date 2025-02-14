@@ -34,3 +34,11 @@ function ifEven (num) {
 const result = ifEven(sum)
 
 // richiamiamo gli if per verificare le scelte dell'utente 
+
+if (userChoise === result) {
+  console.log('Hai vinto');
+  
+} else {
+  console.log('Hai persooooo');
+  
+}
