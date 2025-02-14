@@ -5,6 +5,7 @@ L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. Generiamo un n
 const userChoise = prompt('Scegli pari o dispari')
 
 const userNumber = Number(prompt('Scegli un numero da 1 a 5'))
+console.log(`${userNumber} è il tuo numero`);
 
 
 // il pc genera i suoi numeri (funzione)
@@ -13,10 +14,23 @@ function pcRandom() {
   return pcNumber
 }
 const pcNumber = pcRandom()
-console.log(pcNumber);
+console.log(`${pcNumber} è il numero generato dal PC`);
 
 
 // somma di numero utente più pc
+const sum = pcNumber + userNumber
+console.log(`La somma dei numeri è ${sum}`);
 
+// Determiniamo se la somma è pari o dispari
+function ifEven (num) {
+  if (num % 2 === 0) {
+    return 'pari'
 
+  } return 'dispari'
 
+}
+
+// aggiungiamo sum alla funzione fatta 
+const result = ifEven(sum)
+
+// richiamiamo gli if per verificare le scelte dell'utente 
